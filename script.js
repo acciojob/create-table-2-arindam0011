@@ -3,9 +3,9 @@ function createTable() {
 	let numRow= parseInt(prompt("Input number of rows"));
 	let numCol= parseInt(prompt("Input number of columns"));
 
-	let table=document.createElement("table");
+	let table=document.getElementById("myTable");
 	table.style.border="1px solid black";
-	table.id="myTable"
+	
 	
 	for(let i=0; i<numRow; i++){
 		let row=document.createElement("tr");
@@ -19,6 +19,4 @@ function createTable() {
 		}
 		table.append(row);
 	}
-
-	document.body.prepend(table);
 }
